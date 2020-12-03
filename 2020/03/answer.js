@@ -48,10 +48,10 @@ start_y = 0;
 
 verbose = false;
 
-#1ST ANSWER
+//1ST ANSWER
 solveMountain(mountain, start_x, start_y, slope_x, slope_y, verbose);
 
-#2ND ANSWER
+//2ND ANSWER
 slopes = [[1,1],[3,1],[5,1],[7,1],[1,2]];
 solutions = slopes.map(function(x) { return solveMountain(mountain, start_x, start_y, x[0], x[1], verbose); });
 solutions.reduce(function(a,b) { return a*b; });
